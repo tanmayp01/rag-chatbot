@@ -1,4 +1,4 @@
-# RAG Chatbot — Technical Report
+# RAG Chatbot : Technical Report
 **Amlgo Labs Junior AI Engineer Assignment**
 
 ---
@@ -47,9 +47,9 @@ ChromaDB was chosen over FAISS and Qdrant for the following reasons:
 
 | Feature | ChromaDB | FAISS | Qdrant |
 |---|---|---|---|
-| Persistence | ✅ Built-in | ❌ Manual | ✅ Server-based |
-| Server required | ❌ No | ❌ No | ✅ Yes |
-| Metadata filtering | ✅ Yes | ❌ No | ✅ Yes |
+| Persistence |  Built-in |  Manual |  Server-based |
+| Server required |  No |  No |  Yes |
+| Metadata filtering |  Yes |  No |  Yes |
 | Setup complexity | Low | Low | High |
 
 The collection uses **cosine similarity** (`hnsw:space: cosine`), which is more robust than L2 distance for text embeddings of varying lengths.
@@ -104,27 +104,27 @@ Rules:
 
 ## 4. Example Queries & Responses
 
-### Query 1 ✅ Success
+### Query 1  Success
 **Q**: "What is the main purpose of this document?"  
 **A**: "Based on [Source 1], this document outlines the terms and conditions governing the use of the service, including user rights, obligations, and the provider's limitations of liability."  
 **Notes**: Accurate, grounded in retrieved passage. Source citation correct.
 
-### Query 2 ✅ Success
+### Query 2  Success
 **Q**: "What are the user's obligations or responsibilities?"  
 **A**: "According to [Source 2] and [Source 3], users are obligated to: (1) provide accurate information during registration, (2) not misuse the platform for unlawful purposes, and (3) comply with all applicable laws."  
 **Notes**: Multi-source synthesis worked correctly.
 
-### Query 3 ✅ Success
+### Query 3  Success
 **Q**: "Are there any limitations of liability described?"  
 **A**: "Yes — [Source 4] states that the provider's liability is limited to direct damages only, and excludes consequential, incidental, or punitive damages."  
 **Notes**: Precise legal clause correctly extracted.
 
-### Query 4 ✅ Success
+### Query 4  Success
 **Q**: "What happens if the terms are violated?"  
 **A**: "As stated in [Source 5], violation of these terms may result in immediate account suspension or termination, at the provider's sole discretion."  
 **Notes**: Correctly identified consequence clause.
 
-### Query 5 ❌ Failure (Expected / Correct Behaviour)
+### Query 5  Failure (Expected / Correct Behaviour)
 **Q**: "What is the capital of France?"  
 **A**: "I don't have enough information in the provided documents to answer that."  
 **Notes**: This is the **correct** behaviour — the model refused to use outside knowledge. Hallucination successfully prevented.
