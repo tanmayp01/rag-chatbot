@@ -218,8 +218,6 @@ rag-chatbot/
 
 ## 📺 Demo
 
-> Add a GIF or video link here after recording your demo.
-
 ```
 [GIF PLACEHOLDER — record with: streamlit run app.py, then use LiceCap or OBS]
 ```
@@ -228,10 +226,9 @@ rag-chatbot/
 
 ## 🔗 GitHub Repository
 
-> Replace with your actual GitHub URL after pushing.
 
 ```
-https://github.com/YOUR_USERNAME/rag-chatbot
+https://github.com/tanmayp01/rag-chatbot
 ```
 
 ---
