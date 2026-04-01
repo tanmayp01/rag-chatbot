@@ -1,10 +1,10 @@
-# 🔍 RAG Chatbot — Fine-Tuned Retrieval-Augmented Generation
+#  RAG Chatbot: Fine-Tuned Retrieval-Augmented Generation
 
-A production-ready RAG (Retrieval-Augmented Generation) chatbot that answers questions **grounded strictly in your uploaded documents** — no hallucinations, no guesswork.
+A production-ready RAG (Retrieval-Augmented Generation) chatbot that answers questions **grounded strictly in your uploaded documents** : no hallucinations, no guesswork.
 
 ---
 
-## 📐 Architecture
+##  Architecture
 
 ```
 User Query
@@ -45,7 +45,7 @@ User Query
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -79,7 +79,7 @@ Open your browser at **http://localhost:8501**
 
 ---
 
-## 📄 Step-by-Step: From Document to Chatbot
+## Step-by-Step: From Document to Chatbot
 
 ### Step 1 — Put your document in `/data`
 
@@ -118,7 +118,7 @@ streamlit run app.py
 
 ---
 
-## 🧠 Model & Embedding Choices
+##  Model & Embedding Choices
 
 ### Embedding Model: `all-MiniLM-L6-v2`
 - **Size**: 22 MB
@@ -135,7 +135,7 @@ streamlit run app.py
 
 ---
 
-## 🔧 Chunking Strategy
+##  Chunking Strategy
 
 ```python
 RecursiveCharacterTextSplitter(
@@ -149,7 +149,7 @@ The splitter tries to break at paragraph → sentence → word boundaries in ord
 
 ---
 
-## 💬 Prompt Template
+##  Prompt Template
 
 ```
 You are a precise, helpful AI assistant.
@@ -175,7 +175,7 @@ Rules:
 
 ---
 
-## 📊 Sample Queries & Outputs
+##  Sample Queries & Outputs
 
 | Query | Result |
 |---|---|
@@ -193,7 +193,7 @@ Rules:
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 rag-chatbot/
@@ -216,7 +216,7 @@ rag-chatbot/
 
 ---
 
-## 📺 Demo
+##  Demo
 
 ```
 https://youtu.be/UGycz3ZeD8k
@@ -224,7 +224,7 @@ https://youtu.be/UGycz3ZeD8k
 
 ---
 
-## 🔗 GitHub Repository
+##  GitHub Repository
 
 
 ```
@@ -233,7 +233,7 @@ https://github.com/tanmayp01/rag-chatbot
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 See `requirements.txt`. Key packages:
 
