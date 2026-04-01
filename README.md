@@ -219,7 +219,7 @@ rag-chatbot/
 ## 📺 Demo
 
 ```
-[GIF PLACEHOLDER — record with: streamlit run app.py, then use LiceCap or OBS]
+https://youtu.be/UGycz3ZeD8k
 ```
 
 ---
